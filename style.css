@@ -114,6 +114,22 @@ header {
     }
 }
 
+.navbar-toggle-label {
+    position: absolute;
+    /* top, bottom同時設定0，可以依照父層高度置中 */
+    top: 0;
+    bottom: 0;
+    right: 7.5%;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    width: 30px;
+    height: 3px;
+    background: #267b98;
+}
+
 /********* 電腦版樣式 *********/
 @media screen and (min-width: 768px) {
     .action {
