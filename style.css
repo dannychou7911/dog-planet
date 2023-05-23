@@ -124,10 +124,35 @@ header {
     align-items: center;
 }
 
-.hamburger {
+.navbar-toggle {
+    visibility: hidden;
+    position: absolute;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
     width: 30px;
     height: 3px;
     background: #267b98;
+}
+
+.hamburger {
+    position: relative;
+}
+
+.hamburger::before,
+.hamburger::after {
+    position: absolute;
+    left: 0;
+    content: '';
+}
+
+.hamburger::before {
+    top: 8px;
+}
+.hamburger::after {
+    bottom: 8px;
 }
 
 /********* 電腦版樣式 *********/
