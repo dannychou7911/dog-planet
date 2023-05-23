@@ -86,10 +86,14 @@ header {
     top: 100%;
     width: 100%;
     background: #ffffff;
+    transition: transform 0.3s ease-out;
+    transform: scale(1, 0);
+    transform-origin: top;
 }
 
 .nav-item {
     margin: 1.4rem 0;
+    opacity: 0;
 }
 .nav-link {
     color: #267b98;
@@ -100,6 +104,14 @@ header {
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 60px;
+}
+
+.navbar-toggle:checked ~ .nav {
+    transform: scale(1, 1);
+    .nav-item {
+        opacity: 1;
+        transition: opacity 0.2s ease-out 0.15s;
+    }
 }
 
 /********* 電腦版樣式 *********/
