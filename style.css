@@ -261,4 +261,28 @@ header {
         align-items: center;
         grid-gap: 2rem;
     }
+
+    .banner-wrapper {
+        grid-gap: 1.5rem;
+        grid-template-areas:
+            'main main main left'
+            'main main main right';
+    }
+
+    .main-banner {
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .main-banner .banner-title {
+        font-size: 3rem;
+    }
+    .main-banner .banner-description {
+        font-size: 1.5rem;
+    }
+    .sub-banner .banner-title {
+        font-size: 2rem;
+    }
+    .sub-banner .action {
+        font-size: 1.2rem;
+    }
 }
