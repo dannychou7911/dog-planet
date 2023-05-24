@@ -161,4 +161,27 @@ header {
         font-size: 1.2rem;
         padding: 0.75rem 2rem;
     }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    }
+
+    .navbar-toggle-label {
+        display: none;
+    }
+
+    .nav {
+        all: unset;
+        grid-column: 3/4;
+    }
+
+    .nav-item {
+        margin: 0;
+        opacity: 1;
+    }
+
+    .navbar-brand {
+        grid-column: 2 / 3;
+    }
 }
