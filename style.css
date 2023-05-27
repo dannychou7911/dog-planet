@@ -277,6 +277,35 @@ header {
     font-size: 1rem;
 }
 
+.card::after,
+.card::before {
+    content: '';
+    position: absolute;
+    top: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    transition: transform 0.4s ease-out;
+}
+.card::before {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transform: scale(0, 1);
+}
+
+.card::after {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    transform: scale(1, 0);
+}
+
+.card:hover::before {
+    transform: scale(1.05, 1);
+}
+.card:hover::after {
+    transform: scale(1, 1.05);
+}
+
 /********* 電腦版樣式 *********/
 @media screen and (min-width: 768px) {
     .action {
